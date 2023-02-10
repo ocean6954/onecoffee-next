@@ -1,0 +1,8 @@
+.beans {
+  width: fit-content;
+  margin: 0 auto;
+}
+.beans > figure {
+  display: inline-block;
+  margin: 0.3em;
+}

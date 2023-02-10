@@ -1,0 +1,21 @@
+.list {
+  display: flex;
+  gap: 2em;
+  color: var(--accent);
+}
+
+@media (hover: hover) {
+  .list a:hover {
+    color: var(--yellow);
+  }
+}
+
+@media (hover: none) {
+  .list a {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .list a:active {
+    color: var(--yellow);
+  }
+}

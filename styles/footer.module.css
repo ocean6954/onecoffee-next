@@ -1,0 +1,8 @@
+.wrapper {
+  padding: var(--space-xl) 0;
+  background-color: var(--black);
+}
+
+.text {
+  text-align: center;
+}
