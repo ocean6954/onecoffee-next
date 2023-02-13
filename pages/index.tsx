@@ -7,10 +7,17 @@ import Container from 'src/components/container'
 import Hero from 'components/hero'
 import eyecatch from 'images/hero.jpeg'
 import Beans from 'components/beans'
+import Announce from 'components/announce'
+import { Access } from 'components/announce'
+import Coffee from 'components/coffee'
+import Modal from 'components/modal'
+
+import { useState } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const [modal, setModal] = useState(false)
   return (
     <>
       <Head>
@@ -20,10 +27,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Container>
-        <Hero title={'炭焼珈琲'} subtitle={'1珈琲'} imageOn />
+        <Hero title={'炭焼珈琲'} subtitle={'1珈琲'} />
         <Beans />
       </Container>
-
       <div className={styles.catch}>
         <figure>
           <Image
@@ -49,6 +55,22 @@ export default function Home() {
           1杯のコーヒーを通じて『ホンワカ』出来る時間をご提供いたします
         </p>
       </div>
+      <Container>
+        <div className={styles.flexContainer}>
+          <Announce
+            title="Coffee Beans"
+            line="ご購入はこちら(BASEに飛ぶよー)"
+          />
+          <Announce title="Cafe Menu" line="お店のメニューだよー" />
+          <Announce title="Instagram" line="インスタグラムだよー" />
+        </div>
+        <Beans />
+        <Access />
+        <Beans />
+      </Container>
+      <button onClick={() => setModal(true)}>モーダル</button>
+      <Modal active={modal} setModal={setModal} />
+      <Coffee color="green" />
     </>
   )
 }

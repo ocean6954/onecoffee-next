@@ -1,0 +1,33 @@
+.modalOpen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 6666;
+  display: none;
+  width: 100%;
+  height: 120%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.content {
+  z-index: 2;
+  width: 50%;
+  padding: 1em;
+  background-color: aqua;
+}
+
+.modalClose {
+  display: none;
+}

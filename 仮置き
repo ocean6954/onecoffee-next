@@ -1,0 +1,175 @@
+<div className={styles.modal}>
+      <div class="menu-table">
+        <div id="parent">
+          <div class="left">
+            <div class="left-head">
+              <h2>
+                COFFEE<span>・・・ALL ¥500(税込)</span>
+              </h2>
+            </div>
+            <ul>
+              <li>
+                <p>ワンブレンドハイ</p>
+              </li>
+              <li>
+                <p>ハイロースト　キリマンジャロ</p>
+              </li>
+              <li>
+                <p>コロンビア　スプレモ</p>
+              </li>
+              <li>
+                <p>エチオピア　ゲイシャ</p>
+              </li>
+              <li>
+                <p>タンザニア　キリマンジャロ</p>
+              </li>
+              <li>
+                <p>グァテマラ　ウエウエテナンゴ</p>
+              </li>
+              <li>
+                <p>ブルンジ　レッドブルボン</p>
+              </li>
+              <li>
+                <p>マンデリン　ドロサングル</p>
+              </li>
+              <li>
+                <p>コスタリカ　ジャガーハニー</p>
+              </li>
+              <li>
+                <p>ワンブレンド</p>
+              </li>
+              <li>
+                <p>フレンチキリマンジャロ</p>
+              </li>
+              <li>
+                <p>ダークワン</p>
+              </li>
+              <br />
+              <li>
+                <p>アイスコーヒー</p>
+              </li>
+              <li>
+                <p>ラテ(HOT/ICE)</p>
+              </li>
+              <li>
+                <p>ヒーコジェリーミルク</p>
+              </li>
+            </ul>
+          </div>
+          <div id="right">
+            <h2>Tea</h2>
+            <ul>
+              <li>
+                <span>アールグレイ</span>
+                <span>・・・¥500</span>
+              </li>
+              <li>
+                <p class="between">
+                  <span>レモングラス</span>
+                  <span>・・・¥500</span>
+                </p>
+              </li>
+            </ul>
+            <br />
+            <br />
+            <br />
+            <h2>Sweets</h2>
+            <ul>
+              <li>
+                <p class="between">
+                  <span>今週のケーキ</span>
+                  <span>・・・¥400</span>
+                </p>
+              </li>
+              <li>
+                <p class="between">
+                  <span>珈琲プリン</span>
+                  <span>・・・¥400</span>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span>
+                    ネコチャン珈琲プリンアラモード
+                    <br />
+                    (珈琲、紅茶付)
+                  </span>
+                  <span class="rightspan">・・・¥1000</span>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span>丸太sweetsプレート</span>
+                  <br />
+                  (珈琲、紅茶付)<span class="rightspan">・・・¥1200</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="res-modal-front">
+        <div class="res-left">
+          <div class="left-head">
+            <h2>
+              COFFEE<span>・・・ALL ¥500(税込)</span>
+            </h2>
+          </div>
+          <ul>
+            <li>
+              <p>ワンブレンドハイ</p>
+            </li>
+            <li>
+              <p>ハイロースト　キリマンジャロ</p>
+            </li>
+            <li>
+              <p>コロンビア　スプレモ</p>
+            </li>
+            <li>
+              <p>エチオピア　ゲイシャ</p>
+            </li>
+            <li>
+              <p>タンザニア　キリマンジャロ</p>
+            </li>
+            <li>
+              <p>グァテマラ　ウエウエテナンゴ</p>
+            </li>
+            <li>
+              <p>ブルンジ　レッドブルボン</p>
+            </li>
+            <li>
+              <p>マンデリン　ドロサングル</p>
+            </li>
+            <li>
+              <p>コスタリカ　ジャガーハニー</p>
+            </li>
+            <li>
+              <p>ワンブレンド</p>
+            </li>
+            <li>
+              <p>フレンチキリマンジャロ</p>
+            </li>
+            <li>
+              <p>ダークワン</p>
+            </li>
+            <br />
+            <li>
+              <p>
+                <i class="fas fa-coffee"></i>アイスコーヒー
+              </p>
+            </li>
+            <li>
+              <p>
+                <i class="fa-solid fa-cow"></i>ラテ(HOT/ICE)
+              </p>
+            </li>
+            <li>
+              <p>ヒーコジェリーミルク</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <button class="js-close button-close">Close</button>
+    </div>

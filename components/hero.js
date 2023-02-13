@@ -1,13 +1,12 @@
 import styles from 'styles/hero.module.css'
 
-export default function Hero({ title, subtitle, imageOn = false }) {
+export default function Hero({ title, subtitle }) {
+  const r = 'red'
   return (
-    <div className={styles.text}>
-      <h1 className={styles.title}>
-        {title}
-        <br />
-        {subtitle}
-      </h1>
-    </div>
+    <h1 className={styles.title}>
+      {title}
+      <br />
+      {subtitle}
+    </h1>
   )
 }
