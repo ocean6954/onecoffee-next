@@ -19,7 +19,12 @@
       "src/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/coffee.js"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "components/character.js"
+  ],
   "exclude": ["node_modules"],
   "jsxImportSource": "@emotion/react"
 }

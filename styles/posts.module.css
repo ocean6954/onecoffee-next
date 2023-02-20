@@ -1,0 +1,14 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--space-jump);
+  margin-top: var(--space-xs);
+  margin-bottom: var(--space-lg);
+}
+
+.name {
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+  font-size: var(--small-heading3);
+  font-weight: 400;
+}

@@ -9,9 +9,9 @@ import eyecatch from 'images/hero.jpeg'
 import Beans from 'components/beans'
 import Announce from 'components/announce'
 import { Access } from 'components/announce'
-import Coffee from 'components/coffee'
+import Character from 'components/character'
 import Modal from 'components/modal'
-
+import Logo from 'components/logo'
 import { useState } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -28,6 +28,7 @@ export default function Home() {
       </Head>
       <Container>
         <Hero title={'炭焼珈琲'} subtitle={'1珈琲'} />
+        <Logo></Logo>
         <Beans />
       </Container>
       <div className={styles.catch}>
@@ -70,7 +71,6 @@ export default function Home() {
       </Container>
       <button onClick={() => setModal(true)}>モーダル</button>
       <Modal active={modal} setModal={setModal} />
-      <Coffee color="green" />
     </>
   )
 }
