@@ -46,15 +46,8 @@ export default function Posts({ posts }) {
 
   return (
     <>
-      <style jsx>
-        {`
-          .bg-test {
-            background-color: rgba($color, 0.5);
-          }
-        `}
-      </style>
       <div className={isActive ? styles.modalOpen : styles.modal_bg}>
-        <div className="bg-test" onClick={() => setIsActive((prev) => !prev)}>
+        <div css={bg} onClick={() => setIsActive((prev) => !prev)}>
           <div className={styles.content} onClick={(e) => e.stopPropagation()}>
             <Character eyecatch={characterImage} />
             {/* <button onClick={() => setIsActive(false)}>閉じる</button> */}
