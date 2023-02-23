@@ -4,6 +4,7 @@
   gap: var(--space-jump);
   margin-top: var(--space-xs);
   margin-bottom: var(--space-lg);
+  z-index: 11;
 }
 
 .name {
@@ -11,4 +12,70 @@
   margin-bottom: 2em;
   font-size: var(--small-heading3);
   font-weight: 400;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  animation: bgOpenAnime 0.3s forwards;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalOpen {
+  display: flex;
+}
+.fit {
+  width: fit-content;
+  margin-right: 0;
+  z-index: 100;
+}
+.content {
+  z-index: 2;
+  width: 50%;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.7);
+  animation: bgOpenAnime 0.3s forwards;
+}
+@keyframes bgOpenAnime {
+  /* フェードイン */
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.moveImage {
+  position: fixed;
+  animation: anim 1s forwards;
+}
+.img {
+  color: #000;
+}
+@keyframes anim {
+  0% {
+    top: 0;
+    /* right: 0; */
+  }
+
+  100% {
+    top: -50px;
+    /* right: 100px; */
+  }
 }

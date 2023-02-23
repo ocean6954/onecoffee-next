@@ -4,37 +4,19 @@ import { css, jsx } from '@emotion/react'
 // import './styles.css'
 import { useState } from 'react'
 import Image from 'next/image'
+import styles from 'styles/character.module.css'
 
-export default function Character({ color, character }) {
-  // console.log('useState')
-
-  // const [color, setColor] = useState('blue')
-
-  // const handleClick = () => {
-  //   console.log('handleClick')
-  //   setColor((prev) => (prev === 'red' ? 'blue' : 'red'))
-  // }
-
-  console.log(character.src)
-
-  const style = (color) =>
-    css`
-      &:hover {
-        background-color: ${color};
-      }
-    `
-
+export default function Character({ eyecatch }) {
   return (
     <>
-      <div css={[style(color)]}>
-        <Image
-          src={character}
-          alt=""
-          layout="fixed"
-          sizes="(min-width: 768px) 250px, 20vw"
-          placeholder="blur"
-        />
-      </div>
+      <Image
+        src={eyecatch.url}
+        alt=""
+        layout="fixed"
+        width={eyecatch.width}
+        height={eyecatch.height}
+        className={styles.img}
+      />
     </>
   )
 }

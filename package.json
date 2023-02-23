@@ -28,7 +28,9 @@
     "video-react": "^0.16.0"
   },
   "devDependencies": {
+    "@styled-jsx/plugin-sass": "^4.0.2",
     "eslint": "8.18.0",
-    "eslint-config-next": "12.2.0"
+    "eslint-config-next": "12.2.0",
+    "sass": "^1.58.3"
   }
 }
