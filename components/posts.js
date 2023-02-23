@@ -21,17 +21,11 @@ export default function Posts({ posts }) {
     }
   `
 
-  const bg = css`
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  const content = css`
+    z-index: 2;
+    width: 50%;
+    padding: 1em;
     background-color: ${color};
-    z-index: 20;
     animation: bgOpenAnime 0.3s forwards;
     @keyframes bgOpenAnime {
       /* フェードイン */
@@ -39,7 +33,7 @@ export default function Posts({ posts }) {
         opacity: 0;
       }
       100% {
-        opacity: 0.7;
+        opacity: 0.8;
       }
     }
   `
@@ -47,8 +41,11 @@ export default function Posts({ posts }) {
   return (
     <>
       <div className={isActive ? styles.modalOpen : styles.modal_bg}>
-        <div css={bg} onClick={() => setIsActive((prev) => !prev)}>
-          <div className={styles.content} onClick={(e) => e.stopPropagation()}>
+        <div
+          className={styles.modalWindow}
+          onClick={() => setIsActive((prev) => !prev)}
+        >
+          <div css={content} onClick={(e) => e.stopPropagation()}>
             <Character eyecatch={characterImage} />
             {/* <button onClick={() => setIsActive(false)}>閉じる</button> */}
           </div>
