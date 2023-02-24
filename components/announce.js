@@ -3,15 +3,34 @@ import Link from 'next/link'
 import Image from 'next/image'
 import icon from 'images/icon.png'
 import Container from 'components/container'
+import { useState } from 'react'
+import Modal from 'components/modal'
 
-export default function Announce({ title, line }) {
+export default function Announce({
+  title,
+  line,
+  isButton = false,
+  link = '#',
+}) {
+  const [modal, setModal] = useState(false)
   return (
-    <Link href="https://www.instagram.com/1coffee0326/">
-      <div>
+    <>
+      <div className={styles.left}>
         <p className={styles.text}>{title}</p>
-        <div className={styles.balloon}>
-          <span>{line}</span>
-        </div>
+        {isButton ? (
+          <div className={styles.balloon}>
+            <a onClick={() => setModal(true)}>
+              <span>{line}</span>
+            </a>
+            <Modal active={modal} setModal={setModal} />
+          </div>
+        ) : (
+          <div className={styles.balloon}>
+            <a href={link}>
+              <span>{line}</span>
+            </a>
+          </div>
+        )}
         <div className={styles.right}>
           <Image
             src={icon}
@@ -23,10 +42,9 @@ export default function Announce({ title, line }) {
           />
         </div>
       </div>
-    </Link>
+    </>
   )
 }
-
 export function Access() {
   return (
     <div className={styles.access}>

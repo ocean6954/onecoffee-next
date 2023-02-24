@@ -26,10 +26,18 @@
   color: var(--accent);
   font-size: 1em;
 }
+.span {
+  color: var(--accent);
+  font-size: 1em;
+}
 
 .right {
   text-align: right;
   margin-top: 1em;
+}
+.left {
+  position: relative;
+  z-index: 1;
 }
 
 .access {

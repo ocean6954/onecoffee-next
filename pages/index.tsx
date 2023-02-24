@@ -61,9 +61,14 @@ export default function Home() {
           <Announce
             title="Coffee Beans"
             line="ご購入はこちら(BASEに飛ぶよー)"
+            link="https://www.instagram.com/1coffee0326/"
           />
-          <Announce title="Cafe Menu" line="お店のメニューだよー" />
-          <Announce title="Instagram" line="インスタグラムだよー" />
+          <Announce
+            title="Instagram"
+            line="インスタグラムだよー"
+            link="https://www.instagram.com/1coffee0326/"
+          />
+          <Announce title="Cafe Menu" line="お店のメニューだよー" isButton />
         </div>
         <Beans />
         <Access />

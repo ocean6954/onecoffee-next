@@ -1,0 +1,10 @@
+.flexContainer {
+  composes: bySide from 'styles/utils.module.css';
+}
+
+.left {
+  width: 50%;
+}
+.right {
+  text-align: left;
+}

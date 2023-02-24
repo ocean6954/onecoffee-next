@@ -8,102 +8,102 @@
               </h2>
             </div>
             <ul>
-              <li>
-                <p>ワンブレンドハイ</p>
-              </li>
-              <li>
-                <p>ハイロースト　キリマンジャロ</p>
-              </li>
-              <li>
-                <p>コロンビア　スプレモ</p>
-              </li>
-              <li>
-                <p>エチオピア　ゲイシャ</p>
-              </li>
-              <li>
-                <p>タンザニア　キリマンジャロ</p>
-              </li>
-              <li>
-                <p>グァテマラ　ウエウエテナンゴ</p>
-              </li>
-              <li>
-                <p>ブルンジ　レッドブルボン</p>
-              </li>
-              <li>
-                <p>マンデリン　ドロサングル</p>
-              </li>
-              <li>
-                <p>コスタリカ　ジャガーハニー</p>
-              </li>
-              <li>
-                <p>ワンブレンド</p>
-              </li>
-              <li>
-                <p>フレンチキリマンジャロ</p>
-              </li>
-              <li>
-                <p>ダークワン</p>
-              </li>
+              <tr>
+                <td>ワンブレンドハイ</td>
+              </tr>
+              <tr>
+                <td>ハイロースト　キリマンジャロ</td>
+              </tr>
+              <tr>
+                <td>コロンビア　スプレモ</td>
+              </tr>
+              <tr>
+                <td>エチオピア　ゲイシャ</td>
+              </tr>
+              <tr>
+                <td>タンザニア　キリマンジャロ</td>
+              </tr>
+              <tr>
+                <td>グァテマラ　ウエウエテナンゴ</td>
+              </tr>
+              <tr>
+                <td>ブルンジ　レッドブルボン</td>
+              </tr>
+              <tr>
+                <td>マンデリン　ドロサングル</td>
+              </tr>
+              <tr>
+                <td>コスタリカ　ジャガーハニー</td>
+              </tr>
+              <tr>
+                <td>ワンブレンド</td>
+              </tr>
+              <tr>
+                <td>フレンチキリマンジャロ</td>
+              </tr>
+              <tr>
+                <td>ダークワン</td>
+              </tr>
               <br />
-              <li>
-                <p>アイスコーヒー</p>
-              </li>
-              <li>
-                <p>ラテ(HOT/ICE)</p>
-              </li>
-              <li>
-                <p>ヒーコジェリーミルク</p>
-              </li>
+              <tr>
+                <td>アイスコーヒー</td>
+              </tr>
+              <tr>
+                <td>ラテ(HOT/ICE)</td>
+              </tr>
+              <tr>
+                <td>ヒーコジェリーミルク</td>
+              </tr>
             </ul>
           </div>
           <div id="right">
             <h2>Tea</h2>
             <ul>
-              <li>
+              <tr>
                 <span>アールグレイ</span>
                 <span>・・・¥500</span>
-              </li>
-              <li>
+              </tr>
+              <tr>
                 <p class="between">
                   <span>レモングラス</span>
                   <span>・・・¥500</span>
-                </p>
-              </li>
+                </td>
+              </tr>
             </ul>
             <br />
             <br />
             <br />
             <h2>Sweets</h2>
             <ul>
-              <li>
+              <tr>
                 <p class="between">
                   <span>今週のケーキ</span>
                   <span>・・・¥400</span>
-                </p>
-              </li>
-              <li>
+                </td>
+              </tr>
+              <tr>
                 <p class="between">
                   <span>珈琲プリン</span>
                   <span>・・・¥400</span>
-                </p>
-              </li>
-              <li>
-                <p>
+                </td>
+              </tr>
+              <tr>
+                <td>
                   <span>
                     ネコチャン珈琲プリンアラモード
                     <br />
                     (珈琲、紅茶付)
                   </span>
                   <span class="rightspan">・・・¥1000</span>
-                </p>
-              </li>
-              <li>
-                <p>
+                </td>
+              </tr>
+              <tr>
+                <td>
                   <span>丸太sweetsプレート</span>
                   <br />
                   (珈琲、紅茶付)<span class="rightspan">・・・¥1200</span>
-                </p>
-              </li>
+                </td>
+              </tr>
             </ul>
           </div>
         </div>
@@ -117,56 +117,56 @@
             </h2>
           </div>
           <ul>
-            <li>
-              <p>ワンブレンドハイ</p>
-            </li>
-            <li>
-              <p>ハイロースト　キリマンジャロ</p>
-            </li>
-            <li>
-              <p>コロンビア　スプレモ</p>
-            </li>
-            <li>
-              <p>エチオピア　ゲイシャ</p>
-            </li>
-            <li>
-              <p>タンザニア　キリマンジャロ</p>
-            </li>
-            <li>
-              <p>グァテマラ　ウエウエテナンゴ</p>
-            </li>
-            <li>
-              <p>ブルンジ　レッドブルボン</p>
-            </li>
-            <li>
-              <p>マンデリン　ドロサングル</p>
-            </li>
-            <li>
-              <p>コスタリカ　ジャガーハニー</p>
-            </li>
-            <li>
-              <p>ワンブレンド</p>
-            </li>
-            <li>
-              <p>フレンチキリマンジャロ</p>
-            </li>
-            <li>
-              <p>ダークワン</p>
-            </li>
+            <tr>
+              <td>ワンブレンドハイ</td>
+            </tr>
+            <tr>
+              <td>ハイロースト　キリマンジャロ</td>
+            </tr>
+            <tr>
+              <td>コロンビア　スプレモ</td>
+            </tr>
+            <tr>
+              <td>エチオピア　ゲイシャ</td>
+            </tr>
+            <tr>
+              <td>タンザニア　キリマンジャロ</td>
+            </tr>
+            <tr>
+              <td>グァテマラ　ウエウエテナンゴ</td>
+            </tr>
+            <tr>
+              <td>ブルンジ　レッドブルボン</td>
+            </tr>
+            <tr>
+              <td>マンデリン　ドロサングル</td>
+            </tr>
+            <tr>
+              <td>コスタリカ　ジャガーハニー</td>
+            </tr>
+            <tr>
+              <td>ワンブレンド</td>
+            </tr>
+            <tr>
+              <td>フレンチキリマンジャロ</td>
+            </tr>
+            <tr>
+              <td>ダークワン</td>
+            </tr>
             <br />
-            <li>
-              <p>
+            <tr>
+              <td>
                 <i class="fas fa-coffee"></i>アイスコーヒー
-              </p>
-            </li>
-            <li>
-              <p>
+              </td>
+            </tr>
+            <tr>
+              <td>
                 <i class="fa-solid fa-cow"></i>ラテ(HOT/ICE)
-              </p>
-            </li>
-            <li>
-              <p>ヒーコジェリーミルク</p>
-            </li>
+              </td>
+            </tr>
+            <tr>
+              <td>ヒーコジェリーミルク</td>
+            </tr>
           </ul>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import styles from 'styles/modal.module.css'
+import Menu from 'components/menu'
 
 export default function ({ active = false, setModal }) {
   const closeModal = () => {
@@ -18,7 +19,7 @@ export default function ({ active = false, setModal }) {
         `}</style>
       )}
       <div className={styles.content} onClick={(e) => e.stopPropagation()}>
-        <p>モーダルウィンドウです</p>
+        <Menu />
         <button onClick={() => setModal(false)}>閉じる</button>
       </div>
     </div>
