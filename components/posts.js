@@ -12,6 +12,7 @@ export default function Posts({ posts }) {
   const [color, setColor] = useState()
   const [characterImage, setCharacterImage] = useState({ defaultImage })
   const [imageStyle, setImageStyle] = useState()
+  const [content, setContent] = useState('')
 
   const style = css`
     &:hover {
@@ -21,9 +22,10 @@ export default function Posts({ posts }) {
     }
   `
 
-  const content = css`
+  const modalContent = css`
     z-index: 2;
-    width: 50%;
+    max-width: 700px;
+    width: 70%;
     padding: 1em;
     background-color: ${color};
     animation: bgOpenAnime 0.3s forwards;
@@ -45,14 +47,14 @@ export default function Posts({ posts }) {
           className={styles.modalWindow}
           onClick={() => setIsActive((prev) => !prev)}
         >
-          <div css={content} onClick={(e) => e.stopPropagation()}>
-            <Character eyecatch={characterImage} />
+          <div css={modalContent} onClick={(e) => e.stopPropagation()}>
+            <Character eyecatch={characterImage} content={content} />
             {/* <button onClick={() => setIsActive(false)}>閉じる</button> */}
           </div>
         </div>
       </div>
       <div className={styles.gridContainer}>
-        {posts.map(({ title, eyecatch, slug, category, id }) => (
+        {posts.map(({ title, eyecatch, slug, category, id, content }) => (
           <figure>
             {/* {console.log(id)} */}
             <div className={styles.fit} id={id}>
@@ -67,7 +69,8 @@ export default function Posts({ posts }) {
                 onClick={() => (
                   setIsActive((prev) => !prev),
                   setColor(slug),
-                  setCharacterImage(eyecatch)
+                  setCharacterImage(eyecatch),
+                  setContent(content)
                 )}
                 // className={isActive ? styles.moveImage : styles.fit}
               />
