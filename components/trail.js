@@ -31,13 +31,9 @@ export default function UpToDown() {
 
 /////////////////////////////////////
 
-export function FadeIn() {
+export function FadeIn({ children }) {
   const props = useSpring({
     from: { x: -100, y: 0 },
-    to: { x: 0, y: 1 },
-  })
-  const props2 = useSpring({
-    from: { x: -500, y: 0 },
     to: { x: 0, y: 1 },
   })
 
@@ -53,7 +49,7 @@ export function FadeIn() {
           display: 'inline-block',
         }}
       >
-        こんにちは世界
+        {children}
       </animated.div>
     </div>
   )

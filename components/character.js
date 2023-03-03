@@ -6,7 +6,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import styles from 'styles/character.module.css'
 
-export default function Character({ eyecatch, content }) {
+export default function Character({ eyecatch }) {
   return (
     <>
       <div className={styles.flexContainer}>
@@ -18,7 +18,6 @@ export default function Character({ eyecatch, content }) {
           height={eyecatch.height}
           className={styles.img}
         />
-        <p className={styles.content}>{content}</p>
       </div>
     </>
   )

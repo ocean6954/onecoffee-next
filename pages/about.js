@@ -12,7 +12,7 @@ export default function () {
         <Hero title={'About'} subtitle={'アバウトです'} />
         {/* <FadeInSample /> */}
         <UpToDown />
-        <FadeIn />
+        <FadeIn>あいうお</FadeIn>
       </Container>
     </>
   )

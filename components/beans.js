@@ -16,6 +16,7 @@ export default function Beans() {
           layout="fixed"
           sizes="(min-width: 768px) 25px,16px"
           placeholder="blur"
+          className={styles.bean1}
         />
       </figure>
       <figure>
@@ -25,6 +26,7 @@ export default function Beans() {
           layout="fixed"
           sizes="(min-width: 768px) 25px,16px"
           placeholder="blur"
+          className={styles.bean2}
         />
       </figure>
       <figure>
@@ -34,6 +36,7 @@ export default function Beans() {
           layout="fixed"
           sizes="(min-width: 768px) 25px,16px"
           placeholder="blur"
+          className={styles.bean25}
         />
       </figure>
       <figure>
@@ -43,6 +46,7 @@ export default function Beans() {
           layout="fixed"
           sizes="(min-width: 768px) 25px,16px"
           placeholder="blur"
+          className={styles.bean3}
         />
       </figure>
       <figure>
@@ -52,6 +56,7 @@ export default function Beans() {
           layout="fixed"
           sizes="(min-width: 768px) 25px,16px"
           placeholder="blur"
+          className={styles.bean4}
         />
       </figure>
     </div>
