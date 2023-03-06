@@ -5,7 +5,8 @@ import styles from 'src/styles/Home.module.css'
 
 import Container from 'src/components/container'
 import Hero from 'components/hero'
-import eyecatch from 'images/hero.jpeg'
+import eyecatch from 'images/hero3.jpeg'
+import eyecatch2 from 'images/hero.jpeg'
 import Beans from 'components/beans'
 import Announce from 'components/announce'
 import { Access } from 'components/announce'
@@ -26,8 +27,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <Hero title={'炭焼珈琲'} subtitle={'1珈琲'} />
       <Container>
-        <Hero title={'炭焼珈琲'} subtitle={'1珈琲'} />
         <Logo></Logo>
         <Beans />
       </Container>
@@ -37,7 +39,7 @@ export default function Home() {
             src={eyecatch}
             alt=""
             layout="responsive"
-            sizes="(min-width: 1152px) 1152px,100vw"
+            sizes="(min-width: 1152px) 100vw,100vw"
             priority
             placeholder="blur"
           />
@@ -56,6 +58,8 @@ export default function Home() {
           1杯のコーヒーを通じて『ホンワカ』出来る時間をご提供いたします
         </p>
       </div>
+
+      <Beans />
       <Container>
         <div className={styles.flexContainer}>
           <Announce

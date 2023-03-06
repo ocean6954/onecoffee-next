@@ -7,7 +7,7 @@
   animation-name: slideIn;
   animation-duration: 2s;
   animation-fill-mode: forwards;
-  margin: 0 0.5em;
+  margin: var(--m-top) 0.5em;
   opacity: 0;
 }
 .beans > figure:nth-child(2) {

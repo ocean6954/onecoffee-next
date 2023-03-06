@@ -7,12 +7,28 @@
   min-height: 100vh;
 }
 
+.catch p {
+  /* font-size: 1em;
+  position: absolute;
+  color: var(--yellow);
+  line-height: 2em;
+  text-align: center; */
+
+  font-size: calc(var(--display) * 0.1);
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  /* font-family: var(--font-mono); */
+  position: absolute;
+  line-height: 2em;
+}
+
 .catch {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 10rem;
+  margin-top: var(--m-top);
 }
 
 .catch:before {
@@ -26,13 +42,6 @@
   display: block;
 }
 
-.catch p {
-  font-size: calc(var(--heading1) * 0.6);
-  position: absolute;
-  color: var(--yellow);
-  line-height: 2em;
-  text-align: center;
-}
 .flexContainer {
   composes: sideAndCenter from 'styles/utils.module.css';
 }
