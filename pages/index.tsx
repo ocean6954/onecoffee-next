@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Inter } from '@next/font/google'
 import styles from 'src/styles/Home.module.css'
 
@@ -9,10 +10,12 @@ import eyecatch from 'images/hero3.jpeg'
 import eyecatch2 from 'images/hero.jpeg'
 import Beans from 'components/beans'
 import Announce from 'components/announce'
+import Announce2 from 'components/announce2'
+import Announce3 from 'components/announce3'
 import { Access } from 'components/announce'
 import Character from 'components/character'
 import Modal from 'components/modal'
-import Logo from 'components/logo'
+// import Logo from 'components/logo'
 import { useState } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -28,9 +31,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Hero title={'炭焼珈琲'} subtitle={'1珈琲'} />
+      {/* <Hero title={'炭焼珈琲'} subtitle={'1珈琲'} /> */}
+      <Hero />
+      <Link href="/menu">
+        <h1 style={{ color: 'red' }}>Menuへ</h1>
+      </Link>
+
       <Container>
-        <Logo></Logo>
+        {/* <Logo></Logo> */}
         <Beans />
       </Container>
       <div className={styles.catch}>
@@ -60,6 +68,9 @@ export default function Home() {
       </div>
 
       <Beans />
+      {/* <Announce2 title="Information" /> */}
+      <Announce3 title="Menu" />
+
       <Container>
         <div className={styles.flexContainer}>
           <Announce
@@ -76,7 +87,7 @@ export default function Home() {
         </div>
         <Beans />
         <Access />
-        <Beans />
+        {/* <Beans /> */}
       </Container>
       <button onClick={() => setModal(true)}>モーダル</button>
       <Modal active={modal} setModal={setModal} />

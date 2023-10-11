@@ -8,19 +8,11 @@
 }
 
 .catch p {
-  /* font-size: 1em;
+  font-size: 0.8em;
   position: absolute;
   color: var(--yellow);
   line-height: 2em;
-  text-align: center; */
-
-  font-size: calc(var(--display) * 0.1);
-  font-weight: 700;
-  letter-spacing: 0.1rem;
   text-align: center;
-  /* font-family: var(--font-mono); */
-  position: absolute;
-  line-height: 2em;
 }
 
 .catch {

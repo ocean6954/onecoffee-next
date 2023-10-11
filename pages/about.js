@@ -4,7 +4,9 @@ import { ReactElement } from 'react'
 import FadeInSample from '/components/text'
 import UpToDown from 'components/trail'
 import { FadeIn } from 'components/trail'
+import Feed from 'react-instagram-authless-feed'
 // import React from 'react'
+
 export default function () {
   return (
     <>

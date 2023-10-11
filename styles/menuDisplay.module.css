@@ -1,0 +1,34 @@
+.menuWrapper {
+  background-color: greenyellow;
+}
+
+.menuArea {
+  background-color: var(--white);
+  /* background-color: greenyellow; */
+
+  width: 90%;
+  height: 90%;
+  height: 100vh;
+
+  border-radius: 5%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  color: red;
+}
+.display {
+  /* width: 80%; */
+  height: 90%;
+  background-color: blueviolet;
+}
+.display li {
+  display: flex;
+  align-items: center;
+}
+.display span {
+  margin-left: 2rem;
+}

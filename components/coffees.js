@@ -2,7 +2,7 @@ import Character from 'components/character'
 import styles from 'styles/coffees.module.css'
 import Container from 'components/container'
 import onebreHi from 'images/onebre-hi.jpg'
-import Ueue from 'pages/coffee/ueue'
+// import Ueue from 'pages/coffee/ueue'
 import { getAllSlugs } from 'lib/api'
 
 export default function Coffees() {

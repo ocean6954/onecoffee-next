@@ -8,3 +8,53 @@
 .right {
   text-align: left;
 }
+
+.content {
+  display: flex;
+  align-items: center; /* 横線を上下中央 */
+  display: flex; /* 文字と横線を横並び */
+  /* justify-content: center;  */
+  /* height: 100%; */
+}
+
+.circle {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: white; /*背景色*/
+  margin-left: 1.5rem;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content::after {
+  background-color: #d9a62e; /* 横線の色 */
+  content: '';
+  height: 5px; /* 横線の高さ */
+  width: 70vw; /* 横線の長さ */
+}
+
+.content::after {
+  background-color: #d9a62e; /* 横線の色 */
+  content: '';
+  height: 5px; /* 横線の高さ */
+  width: 70vw; /* 横線の長さ */
+  margin-left: 5%;
+}
+.circleOn {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  z-index: 11;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+}
+.clicked {
+  opacity: 0;
+}

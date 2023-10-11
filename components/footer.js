@@ -5,9 +5,9 @@ export default function Footer() {
   return (
     <footer className={styles.wrapper}>
       <Container>
-        <p className={styles.text}>
+        <h className={styles.text}>
           <span>&copy;</span> Charcoal Fire Roasted Coffee - oneCoffee
-        </p>
+        </h>
       </Container>
     </footer>
   )
