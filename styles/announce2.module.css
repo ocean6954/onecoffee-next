@@ -2,7 +2,7 @@
   position: relative;
   height: 100px;
   width: 100vw;
-  background-color: var(--theme-color);
+  background-color: var(--accent);
 } */
 
 .band {
@@ -13,5 +13,5 @@
   text-align: left;
   padding: 1% 2%;
   width: 100vw;
-  background-color: var(--theme-color);
+  background-color: var(--accent);
 }

@@ -33,7 +33,7 @@ export default function Home() {
 
       {/* <Hero title={'炭焼珈琲'} subtitle={'1珈琲'} /> */}
       <Hero />
-      <Link href="/menu">
+      <Link href="menu">
         <h1 style={{ color: 'red' }}>Menuへ</h1>
       </Link>
 

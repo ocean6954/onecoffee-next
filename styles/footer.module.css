@@ -1,6 +1,6 @@
 .wrapper {
   padding: var(--space-xl) 0;
-  background-color: var(--theme-color);
+  background-color: var(--accent);
   margin-top: auto;
   height: 5rem;
   display: flex;

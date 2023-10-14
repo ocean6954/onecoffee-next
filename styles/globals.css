@@ -6,16 +6,10 @@
     'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono',
     'Courier New', monospace;
 
-  --white: #e8f5e9;
-  --yellow: #f9a825;
-  --yellow2: #d89c14;
-  --accent: #880e4f;
-  --black: #2f2d32;
-  --fire: #ff5500;
-
-  --main-color: #f6e9cb;
-  --theme-color: #e3bc62;
-  --sentence: #fff;
+  --main: #f6e9cb;
+  --accent: #e3bc62;
+  --white: #fff;
+  --black: #444444;
 
   /* タイポグラフィ */
   --body: clamp(1rem, 0.95rem + 0.2vw, 1.125rem); /* 16-18px */
@@ -48,7 +42,7 @@ body {
   color: var(--sentence);
   font-family: var(--font-mono);
   font-size: var(--body);
-  background-color: var(--main-color);
+  background-color: var(--main);
   height: 100%;
 }
 

@@ -1,18 +1,27 @@
-import Character from 'components/character'
-import styles from 'styles/coffees.module.css'
+import Hero from 'components/hero'
 import Container from 'components/container'
-import onebreHi from 'images/onebre-hi.jpg'
-// import Ueue from 'pages/coffee/ueue'
-import { getAllSlugs } from 'lib/api'
-
-export default function Coffees() {
-  return <div className={styles.grid}>{/* <Ueue /> */}</div>
+import { getAllPosts, getPostBySlug } from 'lib/api'
+import Posts from 'components/posts'
+import { getPlaiceholder } from 'plaiceholder'
+export default function Coffees({ posts }) {
+  return (
+    <Container>
+      <Hero title={' Coffees'} subtitle={'一覧だよ'} />
+      <h1>Coffee豆一覧だよ</h1>
+      <Posts posts={posts} />
+    </Container>
+  )
 }
 
-// export async function getStaticPaths() {
-//   const allSlugs = await getAllSlugs()
-
-//   return {
-//     paths: allSlugs.map(({ slug }) => `/blog`),
-//   }
-// }
+export async function getStaticProps() {
+  const posts = await getAllPosts()
+  for (const post of posts) {
+    const { base64 } = await getPlaiceholder(post.eyecatch.url)
+    post.eyecatch.blurDataURL = base64
+  }
+  return {
+    props: {
+      posts: posts,
+    },
+  }
+}

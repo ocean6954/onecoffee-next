@@ -62,7 +62,7 @@ export default function Posts({ posts }) {
       <div className={styles.gridContainer}>
         {posts.map(({ title, eyecatch, slug, category, id, content }) => (
           <figure>
-            {console.log(content)}
+            {/* {console.log(content)} */}
             <div className={styles.fit} id={id}>
               <Image
                 src={eyecatch.url}
