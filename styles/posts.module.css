@@ -4,7 +4,7 @@
   gap: var(--space-jump);
   margin-top: var(--space-xs);
   margin-bottom: var(--space-lg);
-  z-index: 11;
+  z-index: 9;
   justify-content: center;
 }
 

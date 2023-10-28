@@ -1,0 +1,53 @@
+.waku {
+  width: 50vw;
+  height: 600px;
+  /* background-color: blue; */
+  border: 3px solid var(--accent);
+  margin: 0 auto;
+  border-radius: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+}
+.title {
+  font-size: 2rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  transform: translate(-50%, -50%);
+  background-color: var(--main);
+  color: var(--white);
+  padding: 0 1em;
+}
+.content {
+  width: 60%;
+  margin-bottom: 2rem;
+}
+
+.waku p {
+  color: var(--white);
+}
+
+.link {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: var(--main);
+  padding: 0 1em 2px 1em;
+  color: var(--accent);
+  border-radius: 10px;
+  border: 2px solid var(--accent);
+  /* width: 300px; */
+
+  display: flex;
+  justify-content: center;
+}
+.icon {
+  margin: auto 0 auto 1em;
+  width: 20px;
+  height: 20px;
+}

@@ -22,6 +22,8 @@ import {
   Frame,
   TestIcon,
   Test2,
+  PaperBag,
+  Gg,
 } from './iconSVG'
 
 export default function MenuDisplay(props) {
@@ -41,7 +43,8 @@ export default function MenuDisplay(props) {
   `
 
   const modalContent = css`
-    z-index: 3;
+    // position: absolute;
+    z-index: 10;
     max-width: 700px;
     width: 70%;
     padding: 1em;
@@ -80,50 +83,41 @@ export default function MenuDisplay(props) {
         </div>
       )}
       {props.modalNumber === 2 && (
-        <div className={styles.menuArea}>
-          <div className={styles.display}>
-            <div className={isActive ? styles.modalOpen : styles.modal_bg}>
-              <div
-                className={styles.modalWindow}
-                onClick={() => setIsActive((prev) => !prev)}
-              >
-                <div css={modalContent} onClick={(e) => e.stopPropagation()}>
-                  <Character eyecatch={characterImage} />
-                  <ConvertBody contentHTML={content} />
-                </div>
+        <>
+          <div className={isActive ? styles.modalOpen : styles.modal_bg}>
+            <div
+              className={styles.modalWindow}
+              onClick={() => setIsActive((prev) => !prev)}
+            >
+              <div css={modalContent} onClick={(e) => e.stopPropagation()}>
+                <Character eyecatch={characterImage} />
+                <ConvertBody contentHTML={content} />
               </div>
             </div>
-            <ul>
-              {posts.map(({ title, eyecatch, slug, category, id, content }) => (
-                <li>
-                  {/* <figure>
-                    <Image
-                      src={eyecatch.url}
-                      alt=""
-                      layout="fixed"
-                      // width={eyecatch.width}
-                      width={20}
-                      height={20}
-                      // height={eyecatch.height}
-                      placeholder="blur"
-                      blurDataURL={eyecatch.blurDataURL}
-                      onClick={() => (
-                        setIsActive((prev) => !prev),
-                        setColor(slug),
-                        setCharacterImage(eyecatch),
-                        setContent(content)
-                      )}
-                    />
-                  </figure> */}
-                  {/* <TestIcon eyecatch={eyecatch} /> */}
-                  <Test2 eyecatch={eyecatch} />
-                  <span>{title}</span>
-                  {/* <h2 className={styles.name}>{category.name}</h2> */}
-                </li>
-              ))}
-            </ul>
           </div>
-        </div>
+          <div className={styles.menuArea}>
+            <div className={styles.display}>
+              <ul>
+                {posts.map(
+                  ({ title, eyecatch, slug, category, id, content }) => (
+                    <li
+                    // onClick={() => (
+                    //   setIsActive((prev) => !prev),
+                    //   setColor(slug),
+                    //   setCharacterImage(eyecatch),
+                    //   setContent(content)
+                    // )}
+                    >
+                      {/* <Test2 eyecatch={eyecatch} /> */}
+                      <PaperBag slug={slug} eyecatch={eyecatch} />
+                      <span>{title}</span>
+                    </li>
+                  ),
+                )}
+              </ul>
+            </div>
+          </div>
+        </>
       )}
       {props.modalNumber === 3 && (
         <div className={styles.menuArea}>

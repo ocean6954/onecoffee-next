@@ -17,6 +17,7 @@ import Character from 'components/character'
 import Modal from 'components/modal'
 // import Logo from 'components/logo'
 import { useState } from 'react'
+import Review from 'components/review'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -36,6 +37,8 @@ export default function Home() {
       <Link href="menu">
         <h1 style={{ color: 'red' }}>Menuへ</h1>
       </Link>
+
+      <Review />
 
       <Container>
         {/* <Logo></Logo> */}

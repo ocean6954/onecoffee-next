@@ -57,3 +57,14 @@
 .clicked {
   opacity: 0;
 }
+
+@media (max-width: 768px) {
+  .circle,
+  .circleOn {
+    width: 40px;
+    height: 40px;
+  }
+  .circle {
+    margin-left: 1rem;
+  }
+}
