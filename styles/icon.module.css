@@ -25,7 +25,11 @@
   width: 10px;
   height: 10px;
   z-index: 2;
-  background-color: red;
+}
+.itemContainer {
+  width: 100px;
+  /* height: 100px; */
+  /* background-color: green; */
 }
 
 @media (min-width: 425px) {

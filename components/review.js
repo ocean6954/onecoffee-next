@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import latte from 'images/latte2.png'
+import latte from 'images/kirinuki/latte2.png'
 import styles from 'styles/review.module.css'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

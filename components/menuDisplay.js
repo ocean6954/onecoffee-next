@@ -11,6 +11,7 @@ import { css, jsx } from '@emotion/react'
 import Character from 'components/character'
 import { defaultImage } from 'images/eyecatch.jpg'
 import ConvertBody from '/components/convert-body'
+import { Hind } from '@next/font/google'
 import {
   CoffeeCup,
   Tea,
@@ -23,8 +24,16 @@ import {
   TestIcon,
   Test2,
   PaperBag,
-  Gg,
+  Desert,
+  Latte,
+  Latte2,
+  Mug,
 } from './iconSVG'
+
+const FontHind = Hind({
+  weight: '400',
+  subsets: ['latin'],
+})
 
 export default function MenuDisplay(props) {
   const [modal, setModal] = useState(false)
@@ -69,14 +78,50 @@ export default function MenuDisplay(props) {
       {props.modalNumber === 1 && (
         <div className={styles.menuArea}>
           <div className={styles.display}>
-            <ul>
-              <li className={styles.overlayItem}>
-                <CoffeeCup />
-                <span>ホットコーヒー</span>
+            <h2 className={`${styles.title} ${FontHind.className}`}>
+              DrinkMenu
+            </h2>
+            <ul className={FontHind.className}>
+              <li>
+                <Mug />
+                <div className={styles.menuRight}>
+                  <p>
+                    コーヒー
+                    <br />
+                    <span style={{ textAlign: 'left', marginLeft: '2px' }}>
+                      Ice/Hot
+                    </span>
+                  </p>
+                  <p>¥500</p>
+                </div>
               </li>
-              <li className={styles.overlayItem}>
-                <Tea />
-                <span>ホットティー</span>
+              <li>
+                <Latte2 />
+                <div className={styles.menuRight}>
+                  <p>
+                    カフェラテ
+                    <br />
+                    <span style={{ textAlign: 'left' }}>Ice/Hot</span>
+                  </p>
+                  <p>¥500</p>
+                </div>
+              </li>
+              <li>
+                <Mug />
+                <div className={styles.menuRight}>
+                  <p>
+                    ホットティー
+                    <br />
+                    <span style={{ textAlign: 'left' }}>Hot</span>
+                  </p>
+                </div>
+              </li>
+              <li>
+                <Latte />
+                <div className={styles.menuRight}>
+                  <p>コーヒーゼリー</p>
+                  <p>¥500</p>
+                </div>
               </li>
             </ul>
           </div>

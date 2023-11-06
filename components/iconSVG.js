@@ -1,5 +1,9 @@
 import styles from 'styles/icon.module.css'
 import Image from 'next/image'
+import desert from 'images/kirinuki/desert.png'
+import latte2 from 'images/kirinuki/latte2.png'
+import latte from 'images/kirinuki/latte.png'
+import mug from 'images/kirinuki/mug.png'
 
 const Drink = () => (
   <svg
@@ -246,4 +250,72 @@ const Test2 = ({ eyecatch }) => (
   // <span className={styles.test2}>あいうえお</span>
 )
 
-export { Drink, Bean, Food, CoffeeCup, Tea, Maruta, Frame, Test2, PaperBag }
+const Desert = () => (
+  <div className={styles.itemContainer}>
+    <Image
+      src={desert}
+      alt=""
+      layout="responsive"
+      width={desert.width}
+      height={desert.height}
+      placeholder="blur"
+      blurDataURL={desert.blurDataURL}
+    />
+  </div>
+)
+
+const Latte = () => (
+  <div className={styles.itemContainer}>
+    <Image
+      src={latte}
+      alt=""
+      layout="responsive"
+      width={latte.width}
+      height={latte.height}
+      placeholder="blur"
+      blurDataURL={latte.blurDataURL}
+    />
+  </div>
+)
+const Latte2 = () => (
+  <div className={styles.itemContainer}>
+    <Image
+      src={latte2}
+      alt=""
+      layout="responsive"
+      width={latte2.width}
+      height={latte2.height}
+      placeholder="blur"
+      blurDataURL={latte2.blurDataURL}
+    />
+  </div>
+)
+const Mug = () => (
+  <div className={styles.itemContainer}>
+    <Image
+      src={mug}
+      alt=""
+      layout="responsive"
+      width={mug.width}
+      height={mug.height}
+      placeholder="blur"
+      blurDataURL={mug.blurDataURL}
+    />
+  </div>
+)
+
+export {
+  Drink,
+  Bean,
+  Food,
+  CoffeeCup,
+  Tea,
+  Maruta,
+  Frame,
+  Test2,
+  PaperBag,
+  Desert,
+  Mug,
+  Latte,
+  Latte2,
+}

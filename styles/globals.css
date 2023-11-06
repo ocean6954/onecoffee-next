@@ -9,7 +9,7 @@
   --main: #f6e9cb;
   --accent: #d9a62e;
   --white: #fff;
-  --black: #444444;
+  --black: #636363;
 
   /* タイポグラフィ */
   --body: clamp(1rem, 0.95rem + 0.2vw, 1.125rem); /* 16-18px */
