@@ -46,6 +46,7 @@
   /* margin-left: 2rem; */
   color: var(--accent);
   color: var(--black);
+  display: none;
 }
 .display ul {
   margin: 0 auto;

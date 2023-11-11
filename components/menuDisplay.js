@@ -28,6 +28,7 @@ import {
   Latte,
   Latte2,
   Mug,
+  BagBase,
 } from './iconSVG'
 
 const FontHind = Hind({
@@ -109,11 +110,8 @@ export default function MenuDisplay(props) {
               <li>
                 <Mug />
                 <div className={styles.menuRight}>
-                  <p>
-                    ホットティー
-                    <br />
-                    <span style={{ textAlign: 'left' }}>Hot</span>
-                  </p>
+                  <p>ホットティー</p>
+                  <p>¥500</p>
                 </div>
               </li>
               <li>
@@ -142,6 +140,9 @@ export default function MenuDisplay(props) {
           </div>
           <div className={styles.menuArea}>
             <div className={styles.display}>
+              <h2 className={`${styles.title} ${FontHind.className}`}>
+                CoffeeMenu
+              </h2>
               <ul>
                 {posts.map(
                   ({ title, eyecatch, slug, category, id, content }) => (

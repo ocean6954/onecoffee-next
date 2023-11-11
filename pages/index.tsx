@@ -18,6 +18,7 @@ import Modal from 'components/modal'
 // import Logo from 'components/logo'
 import { useState } from 'react'
 import Review from 'components/review'
+import LineMove from 'src/components/lineMove'
 
 const inter = Inter({ subsets: ['latin'] })
 
