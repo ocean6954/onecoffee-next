@@ -9,11 +9,8 @@ export default function Nav() {
 
   const updateCenter = (index) => {
     const clickedX = elementRefs[index].current.getBoundingClientRect()
-    const x = clickedX.width / 2.5
-    console.log(`x is ${x}`)
-    console.log(` is ${clickedX.right}`)
+    const x = clickedX.width / 2 + clickedX.left
     setCenter(x)
-    console.log(`setCenter is ${center}`)
   }
 
   useEffect(() => {
@@ -27,6 +24,7 @@ export default function Nav() {
   return (
     <nav className={styles.nav}>
       <ul className={styles.list}>
+        <li>None</li>
         {['Home', 'About', 'Coffee'].map((text, index) => (
           <li
             key={index}
@@ -37,12 +35,15 @@ export default function Nav() {
           </li>
         ))}
       </ul>
-      <div className={styles.icon} style={{ left: center }}>
-        {console.log(`left is ${center}`)} <HeaderBean />
-      </div>
       <div
-        style={{ width: center, height: center, backgroundColor: 'red' }}
-      ></div>
+        className={styles.icon}
+        style={{
+          left: center,
+          transition: 'left 0.5s ease-in-out',
+        }}
+      >
+        <HeaderBean />
+      </div>
     </nav>
   )
 }

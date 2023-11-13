@@ -7,12 +7,7 @@ import LineMove from 'components/lineMove'
 export default function Header(props) {
   return (
     <header className={styles.header}>
-      <Container large>
-        <div className={styles.flexContainer}>
-          <Nav />
-          {/* <LineMove /> */}
-        </div>
-      </Container>
+      <Nav />
     </header>
   )
 }
