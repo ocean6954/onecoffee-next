@@ -25,13 +25,15 @@ export default function Nav() {
     <nav className={styles.nav}>
       <ul className={styles.list}>
         <li>None</li>
-        {['Home', 'About', 'Coffee'].map((text, index) => (
+        {['Home', 'Menu', 'About'].map((text, index) => (
           <li
             key={index}
             ref={elementRefs[index]}
             onClick={() => handleClick(index)}
           >
-            <Link href="">{text}</Link>
+            <Link href={text === 'Home' ? '/' : `/${text.toLowerCase()}`}>
+              {text}
+            </Link>
           </li>
         ))}
       </ul>
