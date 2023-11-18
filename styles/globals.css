@@ -41,7 +41,7 @@ html,
 body {
   color: var(--sentence);
   font-family: var(--font-mono);
-  font-size: var(--body);
+  font-size: 10px;
   background-color: var(--main);
   height: 100%;
 }

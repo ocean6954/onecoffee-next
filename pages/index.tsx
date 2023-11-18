@@ -19,6 +19,7 @@ import Modal from 'components/modal'
 import { useState } from 'react'
 import Review from 'components/review'
 import LineMove from 'src/components/lineMove'
+import Information from 'components/information'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -35,17 +36,19 @@ export default function Home() {
 
       {/* <Hero title={'炭焼珈琲'} subtitle={'1珈琲'} /> */}
       <Hero />
-      <Link href="menu">
+      {/* <Link href="menu">
         <h1 style={{ color: 'red' }}>Menuへ</h1>
-      </Link>
+      </Link> */}
 
       <Review />
 
       <Container>
         {/* <Logo></Logo> */}
         <Beans />
+        <Information />
       </Container>
-      <div className={styles.catch}>
+
+      {/* <div className={styles.catch}>
         <figure>
           <Image
             src={eyecatch}
@@ -69,7 +72,7 @@ export default function Home() {
           <br />
           1杯のコーヒーを通じて『ホンワカ』出来る時間をご提供いたします
         </p>
-      </div>
+      </div> */}
 
       <Beans />
       {/* <Announce2 title="Information" /> */}

@@ -1,48 +1,65 @@
 .waku {
-  width: 50vw;
-  height: 600px;
+  width: 80vw;
+  height: 300px;
   /* background-color: blue; */
   border: 3px solid var(--accent);
-  margin: 0 auto;
+  margin: 15rem auto;
   border-radius: 15%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
-  flex-direction: column;
 }
 .title {
   font-size: 2rem;
   position: absolute;
+  text-align: center;
+  width: 70%;
   left: 50%;
   transform: translateX(-50%);
   top: 0;
   transform: translate(-50%, -50%);
   background-color: var(--main);
   color: var(--white);
-  padding: 0 1em;
+  padding: 0 1rem;
 }
-.content {
+.image {
+  /* margin: 10rem 0; */
   width: 60%;
+  /* background-color: red; */
   margin-bottom: 2rem;
 }
 
 .waku p {
   color: var(--white);
+  width: 78%;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.content {
+  margin: 1rem auto;
+  /* background-color: red; */
+  /* height: 95px;
+  width: 95px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .link {
   position: absolute;
   bottom: 0%;
   left: 50%;
+  width: 30%;
   transform: translate(-50%, 50%);
   background-color: var(--main);
   padding: 0 1em 2px 1em;
   color: var(--accent);
   border-radius: 10px;
   border: 2px solid var(--accent);
+  font-size: 1.2rem;
   /* width: 300px; */
-
+  /* overflow: visible; */
+  /* line-height: 1; */
   display: flex;
   justify-content: center;
 }
@@ -50,4 +67,16 @@
   margin: auto 0 auto 1em;
   width: 20px;
   height: 20px;
+}
+.escape {
+  transform: scale(1.5, 2);
+  display: inline-block;
+  margin-top: 6%;
+  /* vertical-align: middle; */
+}
+
+@media (min-width: 426px) {
+  .waku {
+    height: 500px;
+  }
 }
