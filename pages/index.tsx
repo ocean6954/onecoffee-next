@@ -20,6 +20,7 @@ import { useState } from 'react'
 import Review from 'components/review'
 import LineMove from 'src/components/lineMove'
 import Information from 'components/information'
+import MenuInformation from 'components/menuInfomation'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -41,7 +42,7 @@ export default function Home() {
       </Link> */}
 
       <Review />
-
+      <MenuInformation />
       <Container>
         {/* <Logo></Logo> */}
         <Beans />
@@ -75,29 +76,6 @@ export default function Home() {
       </div> */}
 
       <Beans />
-      {/* <Announce2 title="Information" /> */}
-      <Announce3 title="Menu" />
-
-      <Container>
-        <div className={styles.flexContainer}>
-          <Announce
-            title="Coffee Beans"
-            line="ご購入はこちら(BASEに飛ぶよー)"
-            link="https://www.instagram.com/1coffee0326/"
-          />
-          <Announce
-            title="Instagram"
-            line="インスタグラムだよー"
-            link="https://www.instagram.com/1coffee0326/"
-          />
-          <Announce title="Cafe Menu" line="お店のメニューだよー" isButton />
-        </div>
-        <Beans />
-        <Access />
-        {/* <Beans /> */}
-      </Container>
-      <button onClick={() => setModal(true)}>モーダル</button>
-      <Modal active={modal} setModal={setModal} />
     </>
   )
 }

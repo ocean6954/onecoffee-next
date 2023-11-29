@@ -1,16 +1,16 @@
 import styles from 'styles/menu.module.css'
 import MenuDisplay from 'components/menuDisplay'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Drink, Bean, Food } from 'components/iconSVG'
 import Container from 'src/components/container'
 import { getAllPosts, getPostBySlug } from 'lib/api'
 import Posts from 'components/posts'
 import { getPlaiceholder } from 'plaiceholder'
+import { useRouter } from 'next/router'
 
 export default function Menu({ posts }) {
   const [modalNumber, setModalNumber] = useState(null)
-
-  const [clicked, setClicked] = useState(false)
+  const router = useRouter()
 
   const openModal = (modalNumber) => {
     setModalNumber(modalNumber)
@@ -27,6 +27,24 @@ export default function Menu({ posts }) {
     // 新しいモーダルを表示
     openModal(modalNumber)
   }
+
+  console.log(`クエリの数字は${router.query.triggerFunction}`)
+
+  useEffect(() => {
+    // 関数をここで呼び出す
+    if (
+      router.query.triggerFunction !== undefined &&
+      router.query.triggerFunction !== null
+    ) {
+      // triggerFunction が存在する場合の処理
+      console.log(
+        `Trigger function with value: ${router.query.triggerFunction}`,
+      )
+
+      // 関数を呼び出す
+      handleIconClick(router.query.triggerFunction)
+    }
+  }, [router.query.triggerFunction])
 
   return (
     <>
@@ -76,6 +94,7 @@ export default function Menu({ posts }) {
         {modalNumber !== null && modalNumber === 3 && (
           <MenuDisplay modalNumber={modalNumber} onClose={closeModal} />
         )}
+        {modalNumber !== null && modalNumber === 4 && <h1>Hello!</h1>}
         {/* <Posts posts={posts} /> */}
       </Container>
     </>

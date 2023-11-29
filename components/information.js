@@ -8,7 +8,7 @@ export default function Information() {
     { name: '住所', description: '北海道函館市港町<br />1-18-37 ' },
     { name: '営業時間', description: '土日月 11:00~17:00 ' },
     { name: '座席', description: '店内5席' },
-    { name: '支払い方法', description: 'PayPay / 楽天pay / 現金' },
+    // { name: '支払い方法', description: 'PayPay / 楽天pay / 現金' },
   ]
   return (
     <>
@@ -28,20 +28,24 @@ export default function Information() {
               ))}
             </ul>
           </div>
-          <div className={styles.image}>
-            <Image
-              src={store}
-              alt=""
-              layout="responsive"
-              // width={50}
-              // height={100}
-              placeholder="blur"
-              blurDataURL={store.blurDataURL}
-              className={styles.img}
-            />
-            <div className={styles.mug}>
-              <MugFill />
+          <div className={styles.right}>
+            <div className={styles.image}>
+              <Image
+                src={store}
+                alt=""
+                layout="responsive"
+                // width={50}
+                // height={100}
+                placeholder="blur"
+                blurDataURL={store.blurDataURL}
+                className={styles.img}
+              />
+              <div className={styles.mug}>
+                <MugFill />
+              </div>
             </div>
+            <p className={styles.payment}>支払い方法</p>
+            <p className={styles.description2}>PayPay / 楽天pay / 現金</p>
           </div>
         </div>
       </div>

@@ -44,6 +44,7 @@ export default function MenuDisplay(props) {
   const [imageStyle, setImageStyle] = useState()
   const [content, setContent] = useState('')
   const { posts } = props
+
   const style = css`
     &:hover {
       background-color: ${color};
@@ -51,7 +52,6 @@ export default function MenuDisplay(props) {
       width: 100vw;
     }
   `
-
   const modalContent = css`
     // position: absolute;
     z-index: 10;
@@ -74,6 +74,15 @@ export default function MenuDisplay(props) {
       }
     }
   `
+  const toggleModal = (number) => {
+    const [modalNumber, setModalNumber] = useState(null)
+    useEffect(
+      (number) => {
+        setModalNumber(number)
+      },
+      [modalNumber],
+    )
+  }
   return (
     <>
       {props.modalNumber === 1 && (
