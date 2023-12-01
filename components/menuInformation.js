@@ -10,9 +10,10 @@ export default function MenuInformation() {
   return (
     <>
       <div className={styles.container}>
-        <h2x className={styles.title}>Menu</h2x>
+        <h2 className={styles.title}>Menu</h2>
         <div className={styles.linkWrapper}>
           <div className={styles.image}>
+            <h3>Drink</h3>
             <Image
               src={latte}
               alt=""
@@ -22,9 +23,9 @@ export default function MenuInformation() {
               placeholder="blur"
               blurDataURL={latte.blurDataURL}
             />
-            <h2>Drink</h2>
           </div>
           <div className={styles.image}>
+            <h3>Food</h3>
             <Image
               src={desert}
               alt=""
@@ -34,9 +35,9 @@ export default function MenuInformation() {
               placeholder="blur"
               blurDataURL={latte.blurDataURL}
             />
-            <h2>Food</h2>
           </div>
           <div className={styles.image}>
+            <h3>Coffee</h3>
             <Image
               src={mug}
               alt=""
@@ -46,7 +47,6 @@ export default function MenuInformation() {
               placeholder="blur"
               blurDataURL={latte.blurDataURL}
             />
-            <h2>Coffee</h2>
           </div>
           <Link href="menu" className={styles.link}>
             一覧へ

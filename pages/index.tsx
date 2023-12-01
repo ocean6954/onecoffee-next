@@ -20,12 +20,11 @@ import { useState } from 'react'
 import Review from 'components/review'
 import LineMove from 'src/components/lineMove'
 import Information from 'components/information'
-import MenuInformation from 'components/menuInfomation'
+import MenuInformation from 'components/menuInformation'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const [modal, setModal] = useState(false)
   return (
     <>
       <Head>
@@ -45,7 +44,7 @@ export default function Home() {
       <MenuInformation />
       <Container>
         {/* <Logo></Logo> */}
-        <Beans />
+        {/* <Beans /> */}
         <Information />
       </Container>
 
@@ -75,7 +74,7 @@ export default function Home() {
         </p>
       </div> */}
 
-      <Beans />
+      {/* <Beans /> */}
     </>
   )
 }

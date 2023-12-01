@@ -10,4 +10,5 @@
 
 .text {
   /* text-align: center; */
+  color: var(--black);
 }

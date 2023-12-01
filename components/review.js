@@ -7,7 +7,7 @@ import { MdChevronRight } from 'react-icons/md'
 export default function Review() {
   return (
     <>
-      <div className={styles.waku}>
+      <div className={styles.wrapper}>
         <h2 className={styles.title}>コーヒーのこだわり</h2>
         <div className={styles.content}>
           <div className={styles.image}>

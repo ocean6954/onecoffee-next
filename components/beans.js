@@ -13,8 +13,8 @@ export default function Beans() {
         <Image
           src={bean1}
           alt=""
-          layout="fixed"
-          sizes="(min-width: 768px) 25px,16px"
+          layout="responsive"
+          sizes="(min-width: 768px) 25px,20px"
           placeholder="blur"
           className={styles.bean1}
         />
@@ -23,8 +23,8 @@ export default function Beans() {
         <Image
           src={bean2}
           alt=""
-          layout="fixed"
-          sizes="(min-width: 768px) 25px,16px"
+          layout="responsive"
+          sizes="(min-width: 768px) 25px,20px"
           placeholder="blur"
           className={styles.bean2}
         />
@@ -33,8 +33,8 @@ export default function Beans() {
         <Image
           src={bean25}
           alt=""
-          layout="fixed"
-          sizes="(min-width: 768px) 25px,16px"
+          layout="responsive"
+          sizes="(min-width: 768px) 25px,20px"
           placeholder="blur"
           className={styles.bean25}
         />
@@ -43,8 +43,8 @@ export default function Beans() {
         <Image
           src={bean3}
           alt=""
-          layout="fixed"
-          sizes="(min-width: 768px) 25px,16px"
+          layout="responsive"
+          sizes="(min-width: 768px) 25px,20px"
           placeholder="blur"
           className={styles.bean3}
         />
@@ -53,8 +53,8 @@ export default function Beans() {
         <Image
           src={bean4}
           alt=""
-          layout="fixed"
-          sizes="(min-width: 768px) 25px,16px"
+          layout="responsive"
+          sizes="(min-width: 768px) 25px,20px"
           placeholder="blur"
           className={styles.bean4}
         />

@@ -5,6 +5,7 @@
   flex-flow: column;
   justify-content: center;
   z-index: 7;
+  height: 50px;
 }
 
 .nav::before {
@@ -29,6 +30,7 @@
   color: var(--accent);
   margin: 1rem 0;
   width: 100%;
+  font-size: 1.4rem;
   /* background-color: red; */
 }
 .list li {
@@ -38,10 +40,10 @@
   left: 5%;
 }
 .list li:nth-child(3) {
-  left: 15%;
+  left: 16%;
 }
 .list li:nth-child(4) {
-  left: 25%;
+  left: 27%;
 }
 .list li:nth-child(1) {
   opacity: 0;

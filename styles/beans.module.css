@@ -1,6 +1,7 @@
 .beans {
   width: fit-content;
   margin: 0 auto;
+  /* background-color: red; */
 }
 .beans > figure {
   display: inline-block;
