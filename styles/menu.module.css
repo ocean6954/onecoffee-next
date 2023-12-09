@@ -13,6 +13,7 @@
   display: flex;
   align-items: center; /* 横線を上下中央 */
   display: flex; /* 文字と横線を横並び */
+  margin-top: 3rem;
   /* justify-content: center;  */
   /* height: 100%; */
 }
