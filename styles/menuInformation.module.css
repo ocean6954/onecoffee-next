@@ -4,9 +4,7 @@
   flex-direction: column;
   align-items: center; */
   width: 80%;
-  margin: 0 auto 15rem auto; /*Beansを入れるときはいらない？
-
-  /* background-color: red; */
+  margin: 0 auto 15rem auto;
 }
 
 .title {
@@ -26,9 +24,11 @@
   width: 50vw;
   height: 2px;
   background-color: var(--accent); /* 線の色 */
+  flex-grow: 1;
 }
 
 .linkWrapper {
+  margin: 0 auto;
   display: flex;
   position: relative;
 }
@@ -41,6 +41,7 @@
 .image {
   width: 150px;
   position: relative;
+  flex-grow: 1;
 }
 .link {
   background-color: var(--accent); /* 丸い枠の背景色 */
@@ -53,6 +54,26 @@
   color: var(--white);
   text-decoration: underline;
   position: absolute;
-  bottom: -50%;
+  /* font-size: 1.4rem; */
   right: 0%;
+  bottom: -40%;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 4rem;
+  }
+  .title::after {
+    height: 3px;
+  }
+  .container {
+    width: 460px;
+  }
+
+  .link {
+    width: 70px;
+    height: 70px;
+    font-size: 1.6rem;
+    bottom: -60%;
+  }
 }
