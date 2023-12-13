@@ -9,7 +9,7 @@ import Modal from 'components/modal'
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react'
 import Character from 'components/character'
-import { defaultImage } from 'images/eyecatch.jpg'
+import { defaultImage } from 'public/eyecatch.jpg'
 import ConvertBody from '/components/convert-body'
 import { Hind } from '@next/font/google'
 import {
