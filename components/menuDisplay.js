@@ -9,7 +9,6 @@ import Modal from 'components/modal'
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react'
 import Character from 'components/character'
-import { defaultImage } from 'public/eyecatch.jpg'
 import ConvertBody from '/components/convert-body'
 import { Hind } from '@next/font/google'
 import {
@@ -40,6 +39,7 @@ export default function MenuDisplay(props) {
   const [modal, setModal] = useState(false)
   const [isActive, setIsActive] = useState(false)
   const [color, setColor] = useState()
+  const defaultImage = 'public/eyecatch.jpg'
   const [characterImage, setCharacterImage] = useState({ defaultImage })
   const [imageStyle, setImageStyle] = useState()
   const [content, setContent] = useState('')

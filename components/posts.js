@@ -5,12 +5,13 @@ import { useState } from 'react'
 import Image from 'next/image'
 import styles from 'styles/posts.module.css'
 import Character from 'components/character'
-import { defaultImage } from 'public/eyecatch.jpg'
 import ConvertBody from '/components/convert-body'
 
 export default function Posts({ posts }) {
   const [isActive, setIsActive] = useState(false)
   const [color, setColor] = useState()
+  const defaultImage = 'public/eyecatch.jpg'
+
   const [characterImage, setCharacterImage] = useState({ defaultImage })
   const [imageStyle, setImageStyle] = useState()
   const [content, setContent] = useState('')
