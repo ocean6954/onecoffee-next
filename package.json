@@ -42,5 +42,8 @@
     "eslint": "8.18.0",
     "eslint-config-next": "12.2.0",
     "sass": "^1.58.3"
+  },
+  "resolutions": {
+    "@types/react": "18.0.27"
   }
 }
