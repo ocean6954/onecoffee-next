@@ -5,7 +5,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import styles from 'styles/posts.module.css'
 import Character from 'components/character'
-import { defaultImage } from 'images/eyecatch.jpg'
+import { defaultImage } from 'public/eyecatch.jpg'
 import ConvertBody from '/components/convert-body'
 
 export default function Posts({ posts }) {
