@@ -1,24 +1,8 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
 import { Inter } from '@next/font/google'
-import styles from 'src/styles/Home.module.css'
-
 import Container from 'src/components/container'
 import Hero from 'components/hero'
-import eyecatch from 'images/hero3.jpeg'
-import eyecatch2 from 'images/hero.jpeg'
-import Beans from 'components/beans'
-import Announce from 'components/announce'
-import Announce2 from 'components/announce2'
-import Announce3 from 'components/announce3'
-import { Access } from 'components/announce'
-import Character from 'components/character'
-import Modal from 'components/modal'
-// import Logo from 'components/logo'
-import { useState } from 'react'
 import Review from 'components/review'
-import LineMove from 'src/components/lineMove'
 import Information from 'components/information'
 import MenuInformation from 'components/menuInformation'
 
@@ -33,46 +17,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      {/* <Hero title={'炭焼珈琲'} subtitle={'1珈琲'} /> */}
       <Hero />
-      {/* <Link href="menu">
-        <h1 style={{ color: 'red' }}>Menuへ</h1>
-      </Link> */}
-
       <Review />
       <MenuInformation />
       <Container>
-        {/* <Logo></Logo> */}
         {/* <Beans /> */}
         <Information />
       </Container>
-
-      {/* <div className={styles.catch}>
-        <figure>
-          <Image
-            src={eyecatch}
-            alt=""
-            layout="responsive"
-            sizes="(min-width: 1152px) 100vw,100vw"
-            priority
-            placeholder="blur"
-          />
-        </figure>
-        <p className={styles.text}>
-          『炭焼』にこだわり
-          <br />
-          自家焙煎、炭焼珈琲を販売
-          <br />
-          炭焼特有の香ばしさや
-          <br />
-          遠赤外線で中までじっくり火を通し
-          <br />
-          酸化を遅らせて新鮮で美味しく体にも優しい珈琲を販売しております☺︎
-          <br />
-          1杯のコーヒーを通じて『ホンワカ』出来る時間をご提供いたします
-        </p>
-      </div> */}
 
       {/* <Beans /> */}
     </>

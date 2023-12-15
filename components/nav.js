@@ -25,7 +25,7 @@ export default function Nav() {
     <nav className={styles.nav}>
       <ul className={styles.list}>
         <li>None</li>
-        {['Home', 'Menu', 'About'].map((text, index) => (
+        {['Home', 'Menu'].map((text, index) => (
           <li
             key={index}
             ref={elementRefs[index]}

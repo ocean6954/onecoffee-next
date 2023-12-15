@@ -10,20 +10,10 @@
   height: 300px;
   margin: 15rem auto;
   position: relative;
-}
-.wrapper::before,
-.wrapper::after {
-  content: ''; /* 擬似要素には content プロパティが必要 */
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   border: 3px solid var(--accent); /* 枠線の幅や色を調整 */
   border-radius: 15%; /* 角の丸みを設定 */
-  z-index: -1; /* 要素の背面に配置 */
-  /* animation: borderAnimation 2s ease-in-out forwards;  */
 }
+
 @keyframes borderAnimation {
   from {
     width: 0;
@@ -35,15 +25,6 @@
   }
 }
 
-/* .wrapper::before {
-  right: 40%;
-  top: 0;
-  border-color: aqua;
-} */
-/* .wrapper::after {
-  left: 40%;
-  top: 0;
-} */
 .title {
   font-size: 2rem;
   position: absolute;
@@ -59,9 +40,7 @@
   padding: 0 1rem;
 }
 .image {
-  /* margin: 10rem 0; */
   width: 60%;
-  /* background-color: red; */
   margin: 2rem 0;
 }
 
@@ -74,13 +53,12 @@
 
 .content {
   margin: 1rem auto;
-  /* background-color: red; */
-  /* height: 95px;
-  width: 95px; */
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  border: 3px solid var(--main); /* 枠線の幅や色を調整 */
+  border-radius: 15%; /* 角の丸みを設定 */
 }
 
 .link {
@@ -95,9 +73,6 @@
   border-radius: 10px;
   border: 2px solid var(--accent);
   font-size: 1.2rem;
-  /* width: 300px; */
-  /* overflow: visible; */
-  /* line-height: 1; */
   display: flex;
   justify-content: center;
 }
@@ -110,7 +85,6 @@
   transform: scale(1.5, 2);
   display: inline-block;
   margin-top: 6%;
-  /* vertical-align: middle; */
 }
 
 @media (min-width: 426px) {
