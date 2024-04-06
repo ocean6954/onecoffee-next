@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import reelIcon from 'images/icon/reel.png'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
-import styles from 'styles/instagram.module.css'
+import styles from 'styles/instagramPosts.module.css'
 // import '@splidejs/react-splide/css'
 // import '@splidejs/react-splide/css/skyblue'
 // import '@splidejs/react-splide/css/sea-green'
 // import '@splidejs/react-splide/css/core'
 // import 'styles/splide-core.min.css'
-const Post = ({ posts }) => {
+const InstagramPosts = ({ posts }) => {
   return (
     <>
       <div className={styles.postWrapper}>
@@ -78,4 +78,4 @@ const Post = ({ posts }) => {
   )
 }
 
-export default Post
+export default InstagramPosts

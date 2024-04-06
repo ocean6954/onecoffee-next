@@ -41,7 +41,7 @@ function InstagramComponent() {
     fetchData()
   }, [])
 
-  return <>{instagramData && <Post posts={instagramData} />}</>
+  return <>{instagramData && <InstagramPosts posts={instagramData} />}</>
 }
 
 export default InstagramComponent
