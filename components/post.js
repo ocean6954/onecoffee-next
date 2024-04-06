@@ -1,8 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import reelIcon from 'images/icon/reel.png'
+import { Splide, SplideSlide } from '@splidejs/react-splide'
 import styles from 'styles/instagram.module.css'
-
+// import '@splidejs/react-splide/css'
+// import '@splidejs/react-splide/css/skyblue'
+// import '@splidejs/react-splide/css/sea-green'
+// import '@splidejs/react-splide/css/core'
+// import 'styles/splide-core.min.css'
 const Post = ({ posts }) => {
   return (
     <>
@@ -48,30 +53,23 @@ const Post = ({ posts }) => {
               </div>
             )}
             {media.media_type === 'CAROUSEL_ALBUM' && (
-              <>
+              <Splide aria-label="インスタグラムの投稿">
                 {media.children.data.map((child, childIndex) => (
-                  <>
-                    {child.media_type === 'IMAGE' && (
-                      <div key={childIndex} className={styles.post}>
-                        <Image
-                          src={child.media_url}
-                          alt="インスタグラムの投稿です"
-                          fill
-                          priority
-                          blurDataURL="data:image/png;base64,..."
-                          className={styles.image}
-                        />
-                        <p>{media.caption}</p>
-                      </div>
-                    )}
-                    {child.media_type === 'VIDEO' && (
-                      <video controls>
-                        <source src={child.media_url} type="video/mp4" />
-                      </video>
-                    )}
-                  </>
+                  // <div key={childIndex} className={styles.post}>
+                  <SplideSlide className={styles.post}>
+                    <Image
+                      src={child.media_url}
+                      alt="インスタグラムの投稿です"
+                      fill
+                      priority
+                      blurDataURL="data:image/png;base64,..."
+                      className={styles.image}
+                    />
+                  </SplideSlide>
+                  /* <p>{media.caption}</p> */
+                  // </div>
                 ))}
-              </>
+              </Splide>
             )}
           </>
         ))}

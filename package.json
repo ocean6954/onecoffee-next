@@ -20,6 +20,7 @@
     "@mui/icons-material": "^5.14.14",
     "@mui/material": "^5.14.14",
     "@next/font": "13.1.6",
+    "@splidejs/react-splide": "^0.7.12",
     "@svgr/webpack": "^8.1.0",
     "@types/node": "18.13.0",
     "@types/react": "18.0.27",
