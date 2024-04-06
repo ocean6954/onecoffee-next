@@ -5,6 +5,7 @@ import Hero from 'components/hero'
 import Review from 'components/review'
 import Information from 'components/information'
 import MenuInformation from 'components/menuInformation'
+import InstagramComponent from 'components/instagram'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,6 +18,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <InstagramComponent />
       <Hero />
       <Review />
       <MenuInformation />

@@ -1,34 +1,11 @@
 import styles from 'styles/menuDisplay.module.css'
-import Link from 'next/link'
-import Image from 'next/image'
-import icon from 'images/icon.png'
-import Container from 'components/container'
 import { useState } from 'react'
-import Modal from 'components/modal'
-
 /** @jsxImportSource @emotion/react */
 import { css, jsx } from '@emotion/react'
 import Character from 'components/character'
 import ConvertBody from '/components/convert-body'
 import { Hind } from '@next/font/google'
-import {
-  CoffeeCup,
-  Tea,
-  Ueue,
-  Santos,
-  Splemo,
-  Maruta,
-  Geisha,
-  Frame,
-  TestIcon,
-  Test2,
-  PaperBag,
-  Desert,
-  Latte,
-  Latte2,
-  Mug,
-  BagBase,
-} from './iconSVG'
+import { Maruta, PaperBag, Latte, Latte2, Mug } from './iconSVG'
 
 const FontHind = Hind({
   weight: '400',
@@ -156,12 +133,12 @@ export default function MenuDisplay(props) {
                 {posts.map(
                   ({ title, eyecatch, slug, category, id, content }) => (
                     <li
-                    // onClick={() => (
-                    //   setIsActive((prev) => !prev),
-                    //   setColor(slug),
-                    //   setCharacterImage(eyecatch),
-                    //   setContent(content)
-                    // )}
+                      onClick={() => (
+                        setIsActive((prev) => !prev),
+                        setColor(slug),
+                        setCharacterImage(eyecatch),
+                        setContent(content)
+                      )}
                     >
                       {/* <Test2 eyecatch={eyecatch} /> */}
                       <PaperBag slug={slug} eyecatch={eyecatch} />

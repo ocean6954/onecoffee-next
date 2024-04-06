@@ -1,0 +1,28 @@
+.postWrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 90%;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.post {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  /* height: 100px; */
+}
+
+.iconContainer {
+  position: absolute;
+  width: 80px;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+}
+
+.image {
+  object-fit: cover;
+  position: relative !important;
+  /* width: auto !important; */
+}
