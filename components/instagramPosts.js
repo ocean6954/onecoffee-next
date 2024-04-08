@@ -3,11 +3,8 @@ import Image from 'next/image'
 import reelIcon from 'images/icon/reel.png'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import styles from 'styles/instagramPosts.module.css'
-// import '@splidejs/react-splide/css'
-// import '@splidejs/react-splide/css/skyblue'
-// import '@splidejs/react-splide/css/sea-green'
-// import '@splidejs/react-splide/css/core'
-// import 'styles/splide-core.min.css'
+import parse from 'html-react-parser'
+
 const InstagramPosts = ({ posts }) => {
   return (
     <>
@@ -35,7 +32,7 @@ const InstagramPosts = ({ posts }) => {
                     width="100%"
                     height="100%"
                   /> */}
-                <p>{media.caption}</p>
+                <p className={styles.caption}>{parse(media.caption)}</p>
               </div>
             )}
             {media.media_type === 'IMAGE' && (
@@ -49,27 +46,28 @@ const InstagramPosts = ({ posts }) => {
                   priority
                   blurDataURL="data:image/png;base64,..."
                 />
-                <p>{media.caption}</p>
+                <p className={styles.caption}>{parse(media.caption)}</p>
               </div>
             )}
             {media.media_type === 'CAROUSEL_ALBUM' && (
-              <Splide aria-label="インスタグラムの投稿">
-                {media.children.data.map((child, childIndex) => (
-                  // <div key={childIndex} className={styles.post}>
-                  <SplideSlide className={styles.post}>
-                    <Image
-                      src={child.media_url}
-                      alt="インスタグラムの投稿です"
-                      fill
-                      priority
-                      blurDataURL="data:image/png;base64,..."
-                      className={styles.image}
-                    />
-                  </SplideSlide>
-                  /* <p>{media.caption}</p> */
-                  // </div>
-                ))}
-              </Splide>
+              <div className={styles.post}>
+                <Splide aria-label="インスタグラムの投稿">
+                  {media.children.data.map((child, childIndex) => (
+                    <SplideSlide className={styles.post}>
+                      <Image
+                        src={child.media_url}
+                        alt="インスタグラムの投稿です"
+                        fill
+                        priority
+                        blurDataURL="data:image/png;base64,..."
+                        className={styles.image}
+                      />
+                    </SplideSlide>
+                  ))}
+                </Splide>
+                {console.log(parse(media.caption))}
+                <p className={styles.caption}>{media.caption}</p>
+              </div>
             )}
           </>
         ))}
