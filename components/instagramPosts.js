@@ -4,18 +4,25 @@ import reelIcon from 'images/icon/reel.png'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import styles from 'styles/instagramPosts.module.css'
 import parse from 'html-react-parser'
+import ReactPlayer from 'react-player'
 
 const InstagramPosts = ({ posts }) => {
+  const [showVideo, setShowVideo] = useState(false)
+
+  const toggleVideo = () => {
+    setShowVideo(!showVideo)
+  }
   return (
     <>
       <div className={styles.postWrapper}>
         {posts.business_discovery.media.data.map((media, index) => (
-          <>
+          <div className={styles.card}>
             {media.media_type === 'VIDEO' && (
               <div key={index} className={styles.post}>
                 <div className={styles.iconContainer}>
                   <Image src={reelIcon} layout="responsive" width="100%" />
                 </div>
+                <div className={styles.imageContainer}></div>
                 <Image
                   src={media.thumbnail_url}
                   alt=""
@@ -26,12 +33,15 @@ const InstagramPosts = ({ posts }) => {
                   blurDataURL="data:image/png;base64,..."
                   className={styles.image}
                 />
-                {/* <ReactPlayer
+                <button onClick={toggleVideo}>Click</button>
+                {/* {showVideo && (
+                  <ReactPlayer
                     url={media.media_url} // 相対パスを指定
                     controls
                     width="100%"
                     height="100%"
-                  /> */}
+                  />
+                )} */}
                 <p className={styles.caption}>{parse(media.caption)}</p>
               </div>
             )}
@@ -69,7 +79,7 @@ const InstagramPosts = ({ posts }) => {
                 <p className={styles.caption}>{media.caption}</p>
               </div>
             )}
-          </>
+          </div>
         ))}
       </div>
     </>
