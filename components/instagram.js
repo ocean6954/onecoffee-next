@@ -6,7 +6,7 @@ async function fetchInstagramData() {
   const instagramBusinessId = process.env.NEXT_PUBLIC_INSTAGRAM_BUSINESS_ID
   const accessToken = process.env.NEXT_PUBLIC_ACCESS_TOKEN
   const instagramAccountName = process.env.NEXT_PUBLIC_INSTAGRAM_ACCOUNT_NAME //取得したいアカウントID名
-  const url = `https://graph.facebook.com/v17.0/${instagramBusinessId}?fields=business_discovery.username(${instagramAccountName}){followers_count,media_count,media.limit(5){caption,media_type,media_url,permalink,timestamp,username,children{media_url,media_type},thumbnail_url}}&access_token=${accessToken}`
+  const url = `https://graph.facebook.com/v17.0/${instagramBusinessId}?fields=business_discovery.username(${instagramAccountName}){followers_count,media_count,media.limit(10){caption,media_type,media_url,permalink,timestamp,username,children{media_url,media_type},thumbnail_url}}&access_token=${accessToken}`
 
   try {
     const response = await fetch(url)

@@ -6,18 +6,11 @@
   margin: 1rem auto;
   gap: 1rem;
 }
-
 .card {
   width: 100%;
-  background-color: var(--accent);
-  height: 400px;
+  background-color: var(--white);
+  height: 100%;
   border-radius: 10px;
-}
-
-.post {
-  width: 100%;
-  height: 50%;
-  /* background-color: aqua; */
 }
 
 .iconContainer {
@@ -27,13 +20,19 @@
   right: 10px;
   z-index: 10;
 }
-.imageContainer {
-}
+
 .media {
+  width: 100%;
+  height: 100%;
+  background-color: green;
+}
+
+.image {
   object-fit: cover;
   position: relative !important;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+  background-color: aqua;
   /* width: 200px !important; */
   /* height: 200px; */
   /* width: auto !important; */
@@ -42,4 +41,9 @@
 .caption {
   color: var(--black);
   white-space: pre-line;
+  /* background-color: red; */
+  height: 40%;
+  overflow: scroll;
+  font-size: 1.4rem;
+  /* text-overflow: ellipsis; */
 }
