@@ -4,7 +4,7 @@
   width: 90%;
   margin: 1rem auto;
   gap: 1rem;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
 }
 
 .iconContainer {
@@ -27,8 +27,11 @@
   position: relative !important;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  background-color: aqua;
+  /* background-color: aqua; */
   /* width: 200px !important; */
   /* height: 200px; */
   /* width: auto !important; */
+}
+
+@media (min-width: 768px) {
 }

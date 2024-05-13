@@ -5,8 +5,8 @@
       .cls-1 {
         fill: none;
         stroke: #d9a62e;
-        stroke-miterlimit: 10;
-        stroke-width: 3px;
+        strokeMiterlimit: 10;
+        strokeWidth: 3px;
       }
     </style>
   </defs>

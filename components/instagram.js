@@ -12,8 +12,8 @@ async function fetchInstagramData() {
     const response = await fetch(url)
     if (response.ok) {
       const data = await response.json()
-      console.log(data) // 返り値①
-      console.log(data.business_discovery.media.data) // 返り値②
+      // console.log(data) // 返り値①
+      // console.log(data.business_discovery.media.data) // 返り値②
       return data
     } else {
       console.error('Instagram APIのリクエストでエラーが発生しました。')

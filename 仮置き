@@ -12,8 +12,8 @@
         }
          .iicls-1, .iicls-2, .iicls-3, .iicls-4, .iicls-5 {
         fill: none;
-        stroke-miterlimit: 10;
-        stroke-width: 11px;
+        strokeMiterlimit: 10;
+        strokeWidth: 11px;
       }
 
       .iicls-2 {

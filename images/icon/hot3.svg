@@ -5,7 +5,7 @@
       .hot {
         fill: #fff;
         stroke: #0000FF;
-        stroke-width: 5px;
+        strokeWidth: 5px;
       }
     </style>
   </defs>

@@ -3,7 +3,7 @@
   <defs>
     <style>
       .cls-1 {
-        clip-path: url(#clippath);
+        clipPath: url(#clippath);
         fill: #0000FF;
       }
 
@@ -12,15 +12,15 @@
       }
 
       .cls-2, .cls-8 {
-        stroke-width: 0px;
+        strokeWidth: 0px;
       }
 
       .cls-3 {
-        stroke-width: 5px;
+        strokeWidth: 5px;
       }
 
       .cls-3, .cls-9, .cls-4, .cls-5, .cls-6 {
-        stroke-miterlimit: 10;
+        strokeMiterlimit: 10;
       }
 
       .cls-3, .cls-9, .cls-4, .cls-5, .cls-6, .cls-7 {
@@ -32,11 +32,11 @@
       }
 
       .cls-4 {
-        stroke-width: 2px;
+        strokeWidth: 2px;
       }
 
       .cls-5, .cls-7 {
-        stroke-width: 4px;
+        strokeWidth: 4px;
       }
 
       .cls-7 {

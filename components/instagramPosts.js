@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, Fragment } from 'react'
 import styles from 'styles/instagramPosts.module.css'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import Image from 'next/image'
@@ -7,16 +7,22 @@ import reelIcon from 'images/icon/reel.png'
 const InstagramPosts = ({ posts }) => {
   return (
     <div className={styles.postWrapper}>
-      {posts.business_discovery.media.data.map((media, index) => (
-        <>
+      {posts.business_discovery.media.data.map((media) => (
+        <Fragment key={media.id}>
+          {/* {console.log(`media情報です${media}`)} */}
           {media.media_type === 'VIDEO' && (
             <div className={styles.media}>
               <div className={styles.iconContainer}>
-                <Image src={reelIcon} layout="responsive" width="100%" />
+                <Image
+                  src={reelIcon}
+                  layout="responsive"
+                  width="100%"
+                  alt="動画アイコン"
+                />
               </div>
               <Image
                 src={media.thumbnail_url}
-                alt=""
+                alt="インスタグラムの投稿です"
                 fill
                 priority
                 blurDataURL="data:image/png;base64,..."
@@ -37,7 +43,7 @@ const InstagramPosts = ({ posts }) => {
             <div className={styles.media}>
               <Image
                 src={media.media_url}
-                alt=""
+                alt="インスタグラムの投稿です"
                 fill
                 priority
                 blurDataURL="data:image/png;base64,..."
@@ -49,7 +55,7 @@ const InstagramPosts = ({ posts }) => {
           {media.media_type === 'CAROUSEL_ALBUM' && (
             <Splide aria-label="インスタグラムの投稿">
               {media.children.data.map((child) => (
-                <SplideSlide className={styles.media}>
+                <SplideSlide className={styles.media} key={child.id}>
                   <Image
                     src={child.media_url}
                     alt="インスタグラムの投稿です"
@@ -62,7 +68,7 @@ const InstagramPosts = ({ posts }) => {
               ))}
             </Splide>
           )}
-        </>
+        </Fragment>
       ))}
     </div>
   )

@@ -2,7 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['images.microcms-assets.io', 'scontent-nrt1-2.cdninstagram.com'],
+    domains: [
+      'images.microcms-assets.io',
+      'scontent-nrt1-2.cdninstagram.com',
+      'scontent-itm1-1.cdninstagram.com',
+    ],
     // disableStaticImages: true,
   },
 
